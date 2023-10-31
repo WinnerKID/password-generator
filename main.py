@@ -68,7 +68,7 @@ user_input = input('Press ENTER to create a password: \n')
 if user_input == "":
     password = generate_password()
     print('Generated Password:', password)
-    with open('storage.txt', 'a') as f:
+    with open('storage.txt', 'a') as f: # this prints the password in the file storage.txt
         print(password, file=f)
 else:
     print('Invalid input. Please press ENTER to generate a password.')
